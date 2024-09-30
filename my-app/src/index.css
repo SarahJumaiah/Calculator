@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .calculator {
+    @apply bg-[#023047] w-80 mx-auto mt-20 p-6 rounded-lg shadow-lg;
+  }
+
+  input {
+    @apply w-full text-right py-2 px-4 text-3xl bg-transparent text-white border-b border-gray-500;
+  }
+
+  .buttons {
+    @apply grid grid-cols-4 gap-4 mt-6;
+  }
+
+  button {
+    @apply transition duration-300 ease-in-out transform active:-translate-y-1 text-2xl font-bold rounded-lg p-4 shadow-sm;
+  }
+
+  .number {
+    @apply bg-gray-300 text-gray-800 hover:bg-gray-400;
+  }
+
+  .operator {
+    @apply bg-[#219ebc] text-white hover:bg-[#1b7a99];
+  }
+}
